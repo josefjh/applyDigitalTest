@@ -1,0 +1,30 @@
+{
+  "name": "applydigitalautomationtest",
+  "version": "1.0.0",
+  "description": "ApplyDigital Testing Exam ",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:RUN": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josefjh/applyDigitalTest.git"
+  },
+  "author": "Jose Francisco Jimenez Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josefjh/applyDigitalTest/issues"
+  },
+  "homepage": "https://github.com/josefjh/applyDigitalTest#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
+    "cypress": "^13.6.3",
+    "cypress-plugin-api": "^2.11.1"
+  },
+  "dependencies": {
+    "cypress-mochawesome-reporter": "^3.8.0"
+  }
+}
