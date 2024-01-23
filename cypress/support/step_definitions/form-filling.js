@@ -2,6 +2,8 @@
 
 import{Given, When, Then} from '@badeball/cypress-cucumber-preprocessor'
 
+let emailNumber= Math.floor(Math.random()*999);
+
 // WHEN STEPS SECTION
 
     //Filling Form informations
@@ -11,8 +13,8 @@ import{Given, When, Then} from '@badeball/cypress-cucumber-preprocessor'
             cy.writeFile('cypress/fixtures/name.json','{"name": "Pedro Perez"}')
         }
         else if(data=='email'){
-            cy.get('[data-qa="signup-email"]').type('peter07@gmail.com')
-            cy.writeFile('cypress/fixtures/email.json','{"email": "peter07@gmail.com"}')
+            cy.get('[data-qa="signup-email"]').type('peter'+emailNumber+'@gmail.com')
+            cy.writeFile('cypress/fixtures/email.json','{"email": "peter'+emailNumber+'@gmail.com"}')
         }
     } )
 

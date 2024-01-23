@@ -11,7 +11,5 @@
 
 #### Feature Files
     One for happy path
-    One for Landing Page validations
-    One for product quantity validations
     One for Sign/Up Login validations
 

@@ -1,5 +1,6 @@
 Feature: Full Happy path for the requested test
-banner
+    The feature meant for this file is a full happy path of the requested User Flow
+
     Scenario: Complete User Flow in the website
     Given I want to visit the site "automationexercise"
     And I scroll down to "middle"
@@ -18,12 +19,12 @@ banner
     And Click on "Signup"
     Then I can see the "Enter Account Information" banner
     When Complete "the mandatory fields" of the form
-    Then Click on "Create Account"
-    And I can see the "Account Created!" banner
-    And Click on "Continue"
-    When Click on "Cart"
+    And Click on "Create Account"
+    Then I can see the "Account Created!" banner
+    When Click on "Continue"
+    And Click on "Cart"
     Then I can see the "Proceed to Checkout" button
-    And Click on "Proceed to Checkout"
+    When Click on "Proceed to Checkout"
     Then I can see the "Review Your Order" banner
     When I add a comment to the order
     And Click on "Place Order"
